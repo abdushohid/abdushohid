@@ -1,8 +1,6 @@
 from telethon import events
 import asyncio
 from collections import deque
-
-
 @borg.on(events.NewMessage(pattern=r"\.moon", outgoing=True))
 async def _(event):
 	if event.fwd_from:
@@ -12,13 +10,9 @@ async def _(event):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
 		deq.rotate(1)
-    
-
 from telethon import events
 import asyncio
 from collections import deque
-
-
 @borg.on(events.NewMessage(pattern=r"\.earth", outgoing=True))
 async def _(event):
 	if event.fwd_from:
@@ -28,10 +22,6 @@ async def _(event):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
 		deq.rotate(1)
-
-
-    
-
 import asyncio
 import re
 import time
@@ -346,8 +336,6 @@ async def typewriter(typew):
 	await typew.edit(str(number) + "%   ████████████████▌")
 	sleep(1)
 	await typew.edit("`tayyor!`")
-
-
 import random
 from .. import loader
 from asyncio import sleep
@@ -383,8 +371,6 @@ class AMod(loader.Module):
 			for i in ["I", "I ❤️", "I ❤️ U", "I ❤️ U!"]:
 				await message.edit(f"<b>{i}</b>")
 				await sleep(0.5)
-
-
 from .. import loader
 from asyncio import sleep
 @loader.tds
@@ -396,9 +382,6 @@ class HeartsMod(loader.Module):
 			for police in ['🔴🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵🔵\n🔴🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵🔵\n🔴🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵🔵','🔵🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴🔴\n🔵🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴🔴\n🔵🔵🔵🔵⬜️⬜️⬜️🔴🔴🔴🔴']:
 				await message.edit(police)
 				await sleep(0.3)
-
-
-
 from .. import loader 
 from asyncio import sleep  
  
@@ -430,11 +413,7 @@ class SnowMod(loader.Module):
   await message.edit('☁️🌨☁️🌨☁️🌨☁️🌨☁️🌨☁️\n\n\n\n❄️    ❄️    ❄️    ❄️    ❄️    ❄️     \n  ❄️      ❄️    ❄️  ❄️      ❄️  ❄️ \n⛄️☃️⛄️☃️⛄️☃️⛄️☃️⛄️☃️⛄️') 
   await sleep(0.75) 
   await message.edit('☁️🌨☁️🌨☁️🌨☁️🌨☁️🌨☁️\n\n\n\n\n  ❄️      ❄️    ❄️  ❄️      ❄️  ❄️ \n⛄️☃️⛄️☃️⛄️☃️⛄️☃️⛄️☃️⛄️')
-
-
-
 version = (12, 3, 7)
-
 from .. import loader, utils 
 from telethon import events 
 from telethon.errors.rpcerrorlist import YouBlockedUserError 
